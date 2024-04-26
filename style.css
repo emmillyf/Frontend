@@ -7,15 +7,29 @@
 }
 
 .container_principal {
+    position: relative;
+}
+
+.container_principal::before {
 
     width: 100%;
     height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     /* background-color: #cce8f3; */
     background-image: url(./asset/929162.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+
+    /*  background: linear-gradient(to bottom, #000000 7%, #ffffff 4%, #000000 1%); */
 
 }
 
@@ -23,15 +37,15 @@
 .nav_bar {
 
     width: 100%;
-    height: 7%;
-    background-color: #004164;
+    height: 2%;
+    background-color: #41e3f8;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    font-size: 14px;
-    color: #ffffff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: #000000;
+    font-family:'Times New Roman';
 }
 
 
@@ -63,6 +77,22 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.container_logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   background-color: red; */
+}
+
+.container_logo img {
+    /* 
+    background-color: yellow; */
+    width: 10%;
+    height: 10%;
+    border-radius: 25px;
+}
+
 .cards {
 
     height: 50%;
@@ -85,7 +115,7 @@
 
 .card {
 
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(255, 255, 255);
     width: 15rem;
     height: 23rem;
     gap: 2rem;
@@ -112,8 +142,8 @@
 
 .container_sobre p {
 
-  /*    background-color: #ff0000; */
-   
+    /*    background-color: #ff0000; */
+
     display: flex;
     justify-self: center;
     width: 66%;
@@ -129,13 +159,14 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
- 
+
 }
 
-.container_sobre img{
+.container_sobre img {
 
-    width: 600px;
-    height: 241px;
+    width: 250x;
+    height: 251px;
+    border-radius: 50%;
 }
 
 .container_separador3 {
@@ -153,10 +184,272 @@
 
 }
 
-.container_principal img {
+.titulo h1 {
 
-    width: 80px;
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.titulo h3 {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 18px;
 
 }
 
+.formulario {
+
+    display: flex;
+    justify-content: center;
+    /*   text-align: left; */
+    width: 100%;
+    padding: 30px;
+    /* background-color: #48ff00; */
+    /*  border:1px solid black; */
+    /* margin-bottom: 50px; */
+}
+
+
+.form {
+
+    /* background-color: tomato; */
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.input {
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #292929;
+    outline: none;
+    margin-bottom: 20px;
+
+}
+
+.label {
+    margin: auto;
+    font-size: 1.1rem;
+    display: block;
+}
+
+
+.inputSubmit {
+    display: block;
+    background-color: #50bfff;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card img {
+
+    width: 235px;
+    height: 245px;
+    border-radius: 5%;
+}
+
+.banana {
+
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.morango {
+
+    font-family: monospace;
+
+}
+
+.morango_bom {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #157c00;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.bolo {
+
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chocolate_Sbom{
+
+    font-family: monospace;
+}
+.bolo_chocolate {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #157c00;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.uva{
+
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uva_verde{
+
+    font-family: monospace;
+
+}
+.uva_boa{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #157c00;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.amora{
+    
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.amora_rosa{
+
+    font-family: monospace;
+
+}
+
+.amora_roxa{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4492;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.metal{
+
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heavymetal{
+
+    font-family: monospace;
+
+}
+
+.meetalBRO{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4492;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    /* argin-top: 0;m */
+}
+
+.fim{
+
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.final{
+
+    font-family: monospace;
+}
+
+.fim_final{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4492;
+    height: 20px;
+    border: none;
+    outline: 0;
+    /* cursor: pointer; */
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
